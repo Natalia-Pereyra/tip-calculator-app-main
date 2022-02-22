@@ -23,13 +23,11 @@ function globalnumbers(percent) {
 fivePercent.addEventListener("click", e => {
     e.preventDefault();
    globalnumbers(5);
-   fivePercent.style.backgroundColor = "hsl(186, 14%, 43%)";
 })
 
 tenPercent.addEventListener("click", e => {
     e.preventDefault();
     globalnumbers(10);
-    tenPercent.style.backgroundColor = "hsl(186, 14%, 43%)";
 })
 
 fifteenPercent.addEventListener("click", e => {
@@ -55,7 +53,6 @@ numberOfPeople.addEventListener("submit", e => {
     let totalTip = (5/100) * billInput.value;
     let totalTipPerPerson = totalTip / peopleInput.value;
     tipPerperson.innerText = `$${Math.round(totalTipPerPerson)}`;
-    console.log(totalTip);
 })
 
 customNumber.addEventListener("submit", e => {
@@ -65,7 +62,6 @@ customNumber.addEventListener("submit", e => {
     tipPerperson.innerText = `$${Math.round(totalTipPerPerson)}`;
     let totalPerson = billInput.value / peopleInput.value;
     totalPerPerson.innerText = `$${Math.round(totalPerson)}`;
-    console.log(e)
 })
 
 resetBtn.addEventListener("click", e => {
