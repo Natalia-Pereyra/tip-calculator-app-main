@@ -132,11 +132,12 @@ button {
   right: 0;
   top: 71%;
 }
-#custom-input {
+#custom-form #custom-input {
   max-width: 148px;
   height: 38px;
   border-radius: 10px;
   text-align: center;
+  padding: 7px 5px;
 }
 #custom-input::placeholder {
   text-align: center;
@@ -166,5 +167,8 @@ button {
   }
   main {
     border-radius: 10px;
+  }
+  #custom-form #custom-input {
+    max-width: 120px;
   }
 }
