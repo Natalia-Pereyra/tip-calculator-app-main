@@ -17,7 +17,7 @@ function globalnumbers(percent) {
     let totalTip = (percent/100) * billInput.value;
     let totalTipPerPerson = totalTip / peopleInput.value;
     tipPerperson.innerText = `$${Math.round(totalTipPerPerson)}`;
-    let totalPerson = billInput.value / peopleInput.value;
+    let totalPerson = (billInput.value / peopleInput.value) + totalTipPerPerson;
     totalPerPerson.innerText = `$${Math.round(totalPerson)}`;
 }
 fivePercent.addEventListener("click", e => {
@@ -50,7 +50,7 @@ numberOfPeople.addEventListener("submit", e => {
     
     let totalPerson = billInput.value / peopleInput.value;
     totalPerPerson.innerText = `$${Math.round(totalPerson)}`;
-    let totalTip = (5/100) * billInput.value;
+    let totalTip = (5/100) * billInput.value; // Why is it 5/100 ?? 
     let totalTipPerPerson = totalTip / peopleInput.value;
     tipPerperson.innerText = `$${Math.round(totalTipPerPerson)}`;
 })
